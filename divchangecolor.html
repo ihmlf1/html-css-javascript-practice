@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        button{
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" style="width:100px;height:120px;border:20px blue;background-color:red"></div>
+    <div>
+        <button id="black" onclick="setcolor('black')">black</button>
+        <button id="red" onclick="setcolor('red')">red</button>
+        <button id="yellow" onclick="setcolor('yellow')">yellow</button>
+        <button id="white" onclick="setcolor('white')">white</button>
+        <button id="reset" onclick="reset()">reset</button>
+    </div>
+    <script>
+        function setcolor(color){
+            var changecolor = document.getElementById('area');
+            changecolor.style.backgroundColor = color;
+        }
+        function reset(){
+            var re = document.getElementById('area');
+            re.style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>
